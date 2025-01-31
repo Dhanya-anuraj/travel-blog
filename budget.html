@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here | Broke BackPacker</title>
+    
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- fontawesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- googlefonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+        *{
+        font-family: "Merriweather", serif;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+</style>
+
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar p-2 navbar-expand-lg bg-danger shadow">
+          <div class="container-fluid">
+              <!-- logo -->
+              <a class="navbar-brand text-white fs-4" href="./index.html"><img src="./media/logo.png" class="img-fluid" style="height: 80px; width: 90px;" alt=""></a>
+              <!-- menu button -->
+              <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- nav-items -->
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link text-white" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Start Here</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./ahoy.html">Ahoy!</a></li>
+                              <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                              <li><a class="dropdown-item" href="#">Our Manifesto</a></li>
+                              <li><a class="dropdown-item" href="#">Work with Us</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./budget.html">Budget Travel</a></li>
+                              <li><a class="dropdown-item" href="#">Personal Development</a></li>
+                              <li><a class="dropdown-item" href="#">Work & Travel</a></li>
+                              <li><a class="dropdown-item" href="#">New Post</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Where to Go</a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Europe</a></li>
+                              <li><a class="dropdown-item" href="#">Southeast Asia</a></li>
+                              <li><a class="dropdown-item" href="#">South America</a></li>
+                              <li><a class="dropdown-item" href="#">Central America</a></li>
+                              <li><a class="dropdown-item" href="#">Asia</a></li>
+                              <li><a class="dropdown-item" href="#">North America</a></li>
+                              <li><a class="dropdown-item" href="#">Oceania</a></li>
+                              <li><a class="dropdown-item" href="#">Africa</a></li>
+                              <li><a class="dropdown-item" href="#">Middle East</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Travel Essential</a>
+                      </li>
+                  </ul>
+                  <div class="d-flex align-items-center">
+                      <a href="#" class="btn btn-light text-danger me-3">Join Our Tribe</a>
+                      <a href="#" class="text-white fs-4"><i class="fa-solid fa-magnifying-glass"></i></a>
+                  </div>
+              </div>
+          </div>
+      </nav>
+      
+    </header>
+
+    <!-- budget field -->
+    <div style="background-image: url(https://static-cse.canva.com/blob/1780485/RightBackground4.13b51dbb.jpg); background-repeat: no-repeat; background-size: cover; height: 700px; ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h1 class="text-light text-center" style="padding-top: 300px; ;">Budget Travel 101</h1>
+                <p class="text-center text-light mt-3">Complete reads for all your backpacker needs.</p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="container-fluid bg-light " style="margin-top: 240px;">
+        <h2 class="text-dark text-center pt-3">Our Top Backpacker Hacks</h2>
+        <p class="text-dark text-center pt-2">Top-tier broke backpackers KNOW.</p>
+        <!-- carosel -->
+        <div id="carouselExample" class="carousel slide p-5">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row"> 
+                 <div class="col-md-3 ">
+                  <div class="card m-3" style="width: 20rem;">
+                    <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                      <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                      <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                  </div>
+                           </div>
+                 <div class="col-md-3">
+                  <div class="card m-3" style="width: 20rem;">
+                    <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                      <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                      <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                  </div>
+              
+                 </div>
+                 <div class="col-md-3 ">
+                  <div class="card m-3" style="width: 20rem;">
+                    <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                      <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                      <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                  </div>
+              
+                 </div>
+                 <div class="col-md-3">
+                  <div class="card m-3" style="width: 20rem;">
+                    <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                      <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                      <a href="#" class="btn btn-outline-danger">Read More</a>
+                    </div>
+                  </div>
+              
+                 </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row"> 
+                  <div class="col-md-3 ">
+                   <div class="card m-3" style="width: 20rem;">
+                     <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                     <div class="card-body">
+                       <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                       <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                       <a href="#" class="btn btn-outline-danger">Read More</a>
+                     </div>
+                   </div>
+                            </div>
+                  <div class="col-md-3">
+                   <div class="card m-3" style="width: 20rem;">
+                     <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                     <div class="card-body">
+                       <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                       <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                       <a href="#" class="btn btn-outline-danger">Read More</a>
+                     </div>
+                   </div>
+               
+                  </div>
+                  <div class="col-md-3 ">
+                   <div class="card m-3" style="width: 20rem;">
+                     <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                     <div class="card-body">
+                       <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                       <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                       <a href="#" class="btn btn-outline-danger">Read More</a>
+                     </div>
+                   </div>
+               
+                  </div>
+                  <div class="col-md-3">
+                   <div class="card m-3" style="width: 20rem;">
+                     <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+                     <div class="card-body">
+                       <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+                       <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+                       <a href="#" class="btn btn-outline-danger">Read More</a>
+                     </div>
+                   </div>
+               
+                  </div>
+ 
+                 </div>
+ 
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr>
+    </div>
+   
+    <section>
+      <div class="container-fluid mt-5">
+        <h1 class="text-center">Backpacking FAQs</h1>
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <div class="container mt-5">
+              <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Is it possible to travel on $10/day?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Yes, it's possible in certain destinations. Consider budget-friendly countries, street food, hostels, and public transportation.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Should I invest in travel insurance?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Absolutely! Travel insurance protects against unexpected events like medical emergencies, cancellations, or lost luggage.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      I’m uninspired... where should I travel to?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Explore trending destinations, or consider nature-rich locations like national parks, tropical islands, or cultural hotspots.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Should I invest in expensive backpacking gear?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Not necessarily. Prioritize quality over cost. Invest in essentials like durable backpacks and comfortable shoes.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+    </section>
+
+     </div>
+</body>
+</html>

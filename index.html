@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broke BackPacker</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- fontawesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- googlefonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        font-family: "Merriweather", serif;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .travel-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+    .travel-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .travel-card img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .travel-card .card-body {
+      padding: 30px;
+    }
+    .travel-card h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    .travel-card p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .btn-custom {
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+
+    .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+              }
+
+    </style>
+</head>
+<body>
+<header>
+    <!-- navbar -->
+    <nav class="navbar p-2 navbar-expand-lg bg-danger shadow">
+      <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand text-white fs-4" href="./index.html"><img src="./media/logo.png" class="img-fluid" style="height: 80px; width: 90px;" alt=""></a>
+          <!-- menu button -->
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!-- nav-items -->
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item ps-3 dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Start Here</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./ahoy.html">Ahoy!</a></li>
+                          <li><a class="dropdown-item" href="#">Meet the Team</a></li>
+                          <li><a class="dropdown-item" href="#">Our Manifesto</a></li>
+                          <li><a class="dropdown-item" href="#">Work with Us</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item ps-3 dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./budget.html">Budget Travel</a></li>
+                          <li><a class="dropdown-item" href="#">Personal Development</a></li>
+                          <li><a class="dropdown-item" href="#">Work & Travel</a></li>
+                          <li><a class="dropdown-item" href="#">New Post</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item ps-3 dropdown">
+                      <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Where to Go</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Europe</a></li>
+                          <li><a class="dropdown-item" href="#">Southeast Asia</a></li>
+                          <li><a class="dropdown-item" href="#">South America</a></li>
+                          <li><a class="dropdown-item" href="#">Central America</a></li>
+                          <li><a class="dropdown-item" href="#">Asia</a></li>
+                          <li><a class="dropdown-item" href="#">North America</a></li>
+                          <li><a class="dropdown-item" href="#">Oceania</a></li>
+                          <li><a class="dropdown-item" href="#">Africa</a></li>
+                          <li><a class="dropdown-item" href="#">Middle East</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item ps-3">
+                      <a class="nav-link text-white" href="#">Travel Essential</a>
+                  </li>
+              </ul>
+              <div class="d-flex align-items-center">
+                  <a href="#" class="btn btn-light text-danger me-3">Join Our Tribe</a>
+                  <a href="#" class="text-white fs-4"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+</header>
+<!-- home section -->
+<section>
+    <div class="" style="background-image: url(https://wallpapers.com/images/featured/best-travel-background-04ml2h9wywaoo6ei.jpg); background-repeat: no-repeat ; background-size: cover; height: 100vh;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-5">
+                <div class="text-center " style="padding-top: 100px; padding-top:150px">
+                    <p class="text-dark">Welcome to <span class="fs-4 text-danger">The Broke Backpacker!</span></p>
+                    <h1>Travel the WORLD on $10/Day</h1>
+                    <p>Welcome to The Broke Backpacker!
+                        Travel the WORLD on $10/Day
+                        Grab a free copy of the ultimate Backpacker Bible to learn our top tips/tricks for seeing the world without breaking the bank.</p>
+
+                        <div class="d-flex">
+                            <input class="form-control" type="text" placeholder="First Name">
+                            <input class="form-control ms-2" type="email" placeholder="Email">
+
+                        </div>
+                        <div class="mt-3">
+                        
+                            <p><input type="checkbox">  I consent to my personal information being processed in accordance with The Broke Backpacker’s <a href="" class="text-white">Privacy Policy</a></p>
+                            <a href=""class="btn btn-danger">Get Yor FREE Copy</a>
+                        </div>
+            
+                  </div>
+            
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+     </div>
+    </div>
+</section>
+<!-- travel section -->
+<section class="travel-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="travel-card py-4 pb-5 mt-3">
+          <div class="card-body">
+            <h2>Travel can change your life</h2>
+            <p>Ahoy friend! My name is Will Hatton. For many years, I traveled the world as the original Broke Backpacker, journeying to far-flung lands on just $10 a day.</p>
+            <p>Today, this site is the ultimate budget travel resource for aspiring adventurers looking to ditch their desks and hit the road in search of raw, real and meaningful adventures...</p>
+            <div class="d-flex">
+              <a href="#" class="btn btn-dark btn-custom me-2">My Story</a>
+              <a href="#" class="btn btn-danger btn-custom">Lessons from the Road</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/Galleries/20180314061303_Yamaha-R15-side.jpg&w=736&h=488&q=75&c=1" alt="img bike" class="img-fluid rounded mt-3 shadow">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- cards -->
+<section>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class="card m-3" style="width: 20rem;">
+          <img src="https://wptravel.io/wp-content/uploads/2022/11/image-14.png" class="card-img-top img-fluid p-2 rounded" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">Trip Planning 101: An EASY Step-by-Step Guide</h5>
+            <p class="card-text">Where to go, what to pack, how to research… let us teach you the ways.</p>
+            <a href="#" class="btn btn-outline-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-3" style="width: 20rem;">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9E41DKaXi7-FErUwfFTEU_TrGNZCiLs1cNg&s" class="card-img-top img-fluid p-2 rounded" style="height: 200px;" alt="card2">
+          <div class="card-body">
+            <h5 class="card-title">Budget Backpacking 101: The COMPLETE Guide</h5>
+            <p class="card-text">The OG Broke Backpacker's top tips, tricks, and hacks on how to travel the world on the cheap.</p>
+            <a href="#" class="btn btn-outline-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card m-3 pb-1" style="width: 20rem;">
+          <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2017/03/Solo-Female-Travelers_18th-jun.jpg" class="card-img-top img-fluid p-2 rounded"  alt="card3">
+          <div class="card-body">
+            <h5 class="card-title">Solo Female Travel 101: How to Travel Alone as a Woman</h5>
+            <p class="card-text">Check out this guide for some enlightening insights on travelling solo as a woman.</p>
+            <a href="#" class="btn btn-outline-danger">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card m-3 pb-2 " style="width: 20rem;">
+          <img src="https://www.traveltomtom.net/images/nieuwe_indeling/artikels/traveltips/international_sim_card/best_international_sim_cards.jpg" class="card-img-top img-fluid p-2 rounded" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">9 International SIM Cards That WORK! (Anywhere & Everywhere)</h5>
+            <p class="card-text">Never have an excuse to not call your mum again! Read our guide and get connected EVERYWHERE.</p>
+            <a href="#" class="btn btn-outline-danger mt-5">Read More</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="card m-3 pb-1" style="width: 20rem;">
+          <img src="https://s3.ap-southeast-1.amazonaws.com/gounesco.com/wp-content/uploads/2014/04/07051801/backpackers.jpg" class="card-img-top img-fluid p-2 rounded" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">Should Backpackers Think About Organised Tours?</h5>
+            <p class="card-text">Well, they absolutely should! In this post we'll break it down and tell you how and why.</p>
+            <a href="#" class="btn btn-outline-danger ">Read More</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4">
+        <div class="card m-3 pb-1" style="width: 20rem;">
+          <img src="https://girleatworld.net/wp-content/uploads/2018/01/5667ae44-9f22-4d36-b589-51829922c6d0.jpg" class="card-img-top img-fluid p-2 rounded" alt="card1">
+          <div class="card-body">
+            <h5 class="card-title">23 Bali Travel Tips You NEED to Know</h5>
+            <p class="card-text">The Broke Backpacker team has been out and about — and these are our best tips!</p>
+            <a href="#" class="btn btn-outline-danger">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- footer -->
+<footer class="bg-dark pb-3 mt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2"></div>
+<div class="col-md-8">
+  <div class="text-center text-white " style="padding-top: 100px; padding-top:90px">
+    <h1>Learn how to travel the world on $10/day! Download our FREE ebook below.</h1>
+        <div class="d-flex text-white pt-3">
+            <input class="form-control" type="text" placeholder="First Name">
+            <input class="form-control ms-2" type="email" placeholder="Email">
+
+        </div>
+        <div class="mt-3 pt-3">
+            <p><input type="checkbox">  I consent to my personal information being processed in accordance with The Broke Backpacker’s <a href="" class="text-white">Privacy Policy</a></p>
+            <a href=""class="btn btn-danger">Get Yor FREE Copy</a>
+        </div>
+  </div>
+
+</div>
+<div class="col-md-2"></div>
+
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-4 ">
+        <h5 class="text-white ms-4">Where to Go</h5>
+        <ul class="mt-3">
+          <li><a class="text-decoration-none text-white" href="">Europe</a></li>
+          <li><a class="text-decoration-none text-white" href="">Southeast Asia</a></li>
+          <li><a class="text-decoration-none text-white" href="">Asia</a></li>
+          <li><a class="text-decoration-none text-white" href="">Nort America</a></li>
+          <li><a class="text-decoration-none text-white" href="">South America</a></li>
+          <li><a class="text-decoration-none text-white" href="">Central America</a></li>
+          <li><a class="text-decoration-none text-white" href="">Oceania</a></li>
+          <li><a class="text-decoration-none text-white" href="">Africa</a></li>
+
+        </ul>
+  
+      </div>
+      <div class="col-md-4">
+        <h5 class="text-white ms-4 ">Plan Your Trip</h5>
+        <ul class="mt-3"> 
+          <li><a class="text-decoration-none text-white" href="">Travel Insurance</a></li>
+          <li><a class="text-decoration-none text-white" href="">The Best Gear</a></li>
+          <li><a class="text-decoration-none text-white" href="">Hostel Life 101</a></li>
+          <li><a class="text-decoration-none text-white" href=""> Book a Hotel</a></li>
+          <li><a class="text-decoration-none text-white" href="">Find Cheap Flights</a></li>
+          <li><a class="text-decoration-none text-white" href="">Budget Backpacking</a></li>
+          <li><a class="text-decoration-none text-white" href="">Travel Tips</a></li>
+          <li><a class="text-decoration-none text-white" href="">Best Travel Jobs</a></li>
+
+        </ul>
+
+      </div>
+      <div class="col-md-4">
+        <ul class="mt-1"> 
+          <li><a class="text-decoration-none text-white" href="">About </a></li>
+          <li><a class="text-decoration-none text-white" href="">The Broke Backpacker Manifesto</a></li>
+          <li><a class="text-decoration-none text-white" href="">Meet the Team</a></li>
+          <li><a class="text-decoration-none text-white" href=""> Essential Travel Resources</a></li>
+          <li><a class="text-decoration-none text-white" href="">Contact Us</a></li>
+          <h5 class="text-white mt-3">Follow Us</h5>
+          <div class="text-danger fs-3 d-flex mt-3">
+            <i class="fa-brands fa-facebook ps-2"></i>
+            <i class="fa-brands fa-instagram ps-3"></i>
+            <i class="fa-brands fa-youtube ps-3"></i>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+    <hr class="text-white">
+    <p class="text-white text-center">© 2025 Broke Backpacker | All Rights Reserved</p>
+  </div>
+</footer>
+    
+</body>
+</html>
+
+
+
